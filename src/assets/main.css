@@ -1,0 +1,84 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
+/* ul {
+  list-style: none;
+  padding: 0;
+} */
+
+/* li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+} */
+
+/* .done {
+  text-decoration: line-through;
+  color: gray;
+} */
+.task-text {
+  flex: 1;
+}
+
+/* .delete {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete:hover {
+  color: #b71c1c;
+} */
+.active {
+  background-color: hsla(160, 100%, 37%, 0.2);
+}
+.search {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.edit {
+  padding: 4px;
+  font-size: 14px;
+}
